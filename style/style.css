@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Suwit Jawa 2.0 */
+
+body {
+    background-color: #C70039;
+    font-family: arial;
+}
+h1 {
+    font-family: 'ubuntu', sans-serif;
+    color: #E1E1E1;
+    font-size: 48px !important;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'ubuntu', sans-serif;
+    color: #E1E1E1;
+    font-size: 48px;
+    margin: 20px;
+}
+
+.area-main {
+}
+
+.area-komputer {
+    position: relative;
+    left: 165px;
+}
+
+.area-player {
+    margin: 0;
+}
+
+.info {
+    width: 240px;
+    height: 350px;
+    background-color: #FF5733;
+    position: relative;
+}
+
+.info p {
+    font-family: 'ubuntu', sans-serif;
+    color: #E1E1E1;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.garis {
+    height: 2px;
+    background-color: #FF5733;
+    display: none;
+}
+
+.score-box {
+    width: 240px;
+    height: 300px;
+    background-color: rgba(255, 87, 51, .0);
+    position: relative;
+    top: -300px;
+}
+
+.score-box h3 {
+    font-family: 'ubuntu', sans-serif;
+    color: #E1E1E1;
+    font-size: 24px;
+    margin-top: 55px;
+}
+
+.score-box p {
+    font-family: 'ubuntu', sans-serif;
+    color: #E1E1E1;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+ul {
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    border-radius: 50%;
+}
+
+@media (min-width: 200px) {
+    .area-main {
+        margin: auto;
+    }
+    img {
+        width: 75px;
+        height: 75px;
+    }
+    .area-komputer {
+        left: 115px;
+    }
+}
+
+@media (min-width: 566px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .area-komputer {
+        left: 135px;
+    }
+}
+
+@media (min-width: 992px) {
+    img {
+        width: 130px;
+        height: 130px;
+        display: block;
+        border-radius: 50%;
+    }
+    .area-komputer {
+        position: relative;
+        left: 165px;
+    }
+}
+
+.gajah, .orang, .semut {
+    transition: .3s;
+    position: relative;
+    top:0;
+    cursor: pointer;
+}
+
+.gajah:hover, .semut:hover, .orang:hover, .active {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .3);
+}
+
+.gajah:active, .semut:active, .orang:active {
+    top: 2px;
+}
+
